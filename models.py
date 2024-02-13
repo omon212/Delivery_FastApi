@@ -37,6 +37,7 @@ class OrderModel(Base):
         return f"<Order {self.product_id} "
 
 
+
 class ProductModel(Base):
     __tablename__ = "product"
     id = Column(Integer, primary_key=True)
