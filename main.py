@@ -4,8 +4,8 @@ from order_routes import order_routher
 
 
 app = FastAPI()
-app.include_router(auth_routher)
-app.include_router(order_routher)
+app.include_router(auth_routher, prefix="/auth")
+app.include_router(order_routher, prefix="/order")
 
 
 @app.get('/')
