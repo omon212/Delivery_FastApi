@@ -9,6 +9,7 @@ class Signupmodel(BaseModel):
     is_staff: Optional[bool]
     is_active: Optional[bool]
 
+
     class Config:
         from_attributes = True
         json_schema_extra = {
